@@ -1,0 +1,90 @@
+
+.schedule {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    width: 100%;
+    padding: 30px;
+}
+
+.sports {
+    width: 266px;
+    margin-right: 5px;
+}
+
+.sport-item {
+    width: 100%;
+    background: #C6DCA1B0;
+    margin-bottom: 5px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Outfit", sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 24.2px;
+    text-align: left;
+    
+}
+
+.calender {
+    width: 956px;
+}
+
+.calender-item {
+    background: #F3801A52;
+    width: 100%;
+    margin-bottom: 5px;
+    height: 45px;
+    font-family: "Outfit", sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 24.2px;
+    text-align: left;
+    width: 956px;
+}
+
+.big {
+    height: 70px;
+}
+
+.calender-grid {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto;
+    background-color: transparent;
+    grid-column-gap: 5px;
+    grid-row-gap: 5px;
+    padding-left: 5px;
+    width: 956px;
+  }
+  .grid-item {
+    background-color:#F9F9F9;
+    height: 45px;
+    width: 45px;
+    border: none;
+    font-size: 45px;
+    text-align: center;
+  }
+
+  .big-font {
+    font-size: 30px;
+  }
+
+
+  @media screen and (max-width: 480px) {
+    .calender {
+        overflow-x: scroll;
+    }
+
+    
+    .schedule {
+        padding: 10px;
+        width: 95vw;
+    }
+
+    .big-font {
+        font-size: 25px;
+      }
+
+  }

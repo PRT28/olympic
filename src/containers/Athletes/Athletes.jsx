@@ -13,7 +13,7 @@ const Athelets = () => {
                 At the Paris 2024 Olympics, India will expect more athletes to qualify and of course, increase the Tokyo Olympics medal haul.
             </div>
             <div className="athlete-info">
-                <div className="absolute-left">
+                <div className="absolute-left desktop">
                     <img src={OlymLogo} alt="" />
                 </div>
                 <table className="athlete-table">
@@ -148,7 +148,7 @@ const Athelets = () => {
                         <td className="athlete-td">Women’s 68kg</td>
                     </tr>
                 </table>
-                <div className="absolute-right">
+                <div className="absolute-right desktop">
                     <img src={India} alt="" />
                 </div>
             </div>

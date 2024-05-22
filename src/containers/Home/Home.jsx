@@ -6,13 +6,49 @@ import NewsCard from "../../components/NewsCard/NewsCard";
 const Home = () => {
     return (
         <div className="home">
-            <div>
-            <div className="slanted" />
-            <div className="orange">
+            <div className="desktop">
+                <div className="slanted" />
+                <div className="orange">
+                </div>
+                <div className="white">
+                    <div className="white-slanted" />
+                    <div className="table-container">
+                        <table>
+                            <tr>
+                                <th>Athlete</th>
+                                <th>Sport</th>
+                                <th>Event</th>
+                            </tr>
+                            <tr>
+                                <td>Neeraj Choppra</td>
+                                <td>Athletics</td>
+                                <td>Men's Javelin Throw</td>
+                            </tr>
+                            <tr>
+                                <td>PV Sindhu</td>
+                                <td>Badminton</td>
+                                <td>Women's Single</td>
+                            </tr>
+                            <tr>
+                                <td>Nisha Dahiya</td>
+                                <td>Wrestling</td>
+                                <td>Women's 68Kg</td>
+                            </tr>
+                        </table>
+                        <div className="anchor" onClick={() => window.location.pathname="/athletes"}>View all Athlete &#8594;</div>
+                    </div>
+                    
+                    <img src={Banner} alt="" />
+                </div>
+                <div className="green">
+                </div>
+
             </div>
-            <div className="white">
-                <div className="white-slanted" />
-                <div className="table-container">
+
+            <div className="mobile">
+
+                <div className="orange" />
+                <div style={{padding: '12px'}}>
                     <table>
                         <tr>
                             <th>Athlete</th>
@@ -37,11 +73,7 @@ const Home = () => {
                     </table>
                     <div className="anchor" onClick={() => window.location.pathname="/athletes"}>View all Athlete &#8594;</div>
                 </div>
-                
-                <img src={Banner} alt="" />
-            </div>
-            <div className="green">
-            </div>
+                <div className="green" />
 
             </div>
 

@@ -67,3 +67,10 @@
 .athlete-tr:nth-child(odd) {
     background-color: transparent;
 }
+
+@media screen and (max-width: 480px) {
+    .athlete-table {
+        width: 100%;
+        margin: 10px
+    }
+  }
