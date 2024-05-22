@@ -31,8 +31,11 @@ const NavBar = () => {
 
             </div>
             <div className="olympic-banner">
-                <img src={OlympicBanner} alt="" />
-                <div className="olympics-title">Olympics Games Paris 2024</div>
+                <div style={{display: 'flex', alignItems: 'center'}}>
+                    <img src={OlympicBanner} alt="" style={{marginRight: '20px'}} />
+                    <div className="olympics-title">Olympics Games Paris 2024</div>
+                </div>
+                
                 <div className="olympics-title">(26 July - 11 August 2024)</div>
                 <Timer />
             </div>

@@ -5,16 +5,65 @@
     font-weight: 400;
     line-height: 25.2px;
     text-align: left;
+    background-image: url("../../static/svg/olymbg.svg");
+    background-position: top;
+    background-size: auto;
+    background-repeat: no-repeat;
 }
 
 .athlete-info {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+    justify-content: center;
+    align-items:flex-start;
+    margin-top: 30px;
+    position: relative;
+}
+
+.absolute-left {
+    position: sticky;
+    top: 0;
+    left: -100px;
+}
+
+.absolute-right {
+    position: sticky;
+    top: 0;
+    right: 0;
 }
 
 .athlete-table {
-    width: 70%;
+    width: 50%;
     margin-left: 50px;
+}
+
+.athlete-table, .athlete-tr, .athlete-th, .athlete-td {
+    text-align: center;
+}
+
+.athlete-tr:nth-child(even) {
+    background: linear-gradient(90deg, rgba(237, 173, 95, 0.338) 0%, rgba(249, 224, 194, 0) 100%);
+
+
+  }
+
+  .athlete-tr:nth-child(3n+1) {
+    background: linear-gradient(90deg, rgba(119, 156, 54, 0.338) 0%, rgba(255, 255, 255, 0.43) 100%);
+
+
+
+  }
+
+  .athlete-tr:nth-child(1) {
+    position: sticky;
+    top: 0px;
+
+    background: #FFF !important;
+
+
+
+  }
+  
+.athlete-tr:nth-child(odd) {
+    background-color: transparent;
 }

@@ -1,19 +1,24 @@
 import React from "react";
 import './Home.css';
 import Banner from '../../static/svg/banner.svg'
+import NewsCard from "../../components/NewsCard/NewsCard";
 
-const Home = ({setActive}) => {
+const Home = () => {
     return (
         <div className="home">
             <div>
+            <div className="slanted" />
             <div className="orange">
-                <div className="orange-slanted" />
             </div>
             <div className="white">
-                <div className="white-slanted">
-                </div>
+                <div className="white-slanted" />
                 <div className="table-container">
                     <table>
+                        <tr>
+                            <th>Athlete</th>
+                            <th>Sport</th>
+                            <th>Event</th>
+                        </tr>
                         <tr>
                             <td>Neeraj Choppra</td>
                             <td>Athletics</td>
@@ -36,13 +41,18 @@ const Home = ({setActive}) => {
                 <img src={Banner} alt="" />
             </div>
             <div className="green">
-                <div className="green-slanted" />
             </div>
 
             </div>
 
             <div className="news">
                 <div className="news-title">News & Headlines</div>
+                <div className="blogs-container">
+                    <NewsCard imgUrl={"https://assets.editorial.aetnd.com/uploads/2010/01/gettyimages-466313493-2.jpg"} title="This is a dummy title" tag="dummy" linkUrl="https://olympics.com/en/live-blog/tokyo-2020-olympics-2021-games-live-blog" />
+                    <NewsCard imgUrl={"https://assets.editorial.aetnd.com/uploads/2010/01/gettyimages-466313493-2.jpg"} title="This is a dummy title" tag="dummy" linkUrl="https://olympics.com/en/live-blog/tokyo-2020-olympics-2021-games-live-blog" />
+                    <NewsCard imgUrl={"https://assets.editorial.aetnd.com/uploads/2010/01/gettyimages-466313493-2.jpg"} title="This is a dummy title" tag="dummy" linkUrl="https://olympics.com/en/live-blog/tokyo-2020-olympics-2021-games-live-blog" />
+                    
+                </div>
 
             </div>
         </div>

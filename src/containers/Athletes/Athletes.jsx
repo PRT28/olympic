@@ -13,41 +13,144 @@ const Athelets = () => {
                 At the Paris 2024 Olympics, India will expect more athletes to qualify and of course, increase the Tokyo Olympics medal haul.
             </div>
             <div className="athlete-info">
-                <img src={OlymLogo} alt="" />
-                    <table className="athlete-table">
-                        <tr className="athlete-tr">
-                            <th className="athlete-th">Athlete</th>
-                            <th className="athlete-th">Sport</th>
-                            <th className="athlete-th">Event</th>
-                        </tr>
-                        <tr className="athlete-tr">
-                            <td className="athlete-td">Neeraj Choppra</td>
-                            <td className="athlete-td">Athletics</td>
-                            <td className="athlete-td">Men's Javelin Throw</td>
-                        </tr>
-                        <tr className="athlete-tr">
-                            <td className="athlete-td">PV Sindhu</td>
-                            <td className="athlete-td">Badminton</td>
-                            <td className="athlete-td">Women's Single</td>
-                        </tr>
-                        <tr className="athlete-tr">
-                            <td className="athlete-td">Nisha Dahiya</td>
-                            <td className="athlete-td">Wrestling</td>
-                            <td className="athlete-td">Women's 68Kg</td>
-                        </tr>
-                        <tr className="athlete-tr">
-                            <td className="athlete-td">Team India</td>
-                            <td className="athlete-td">Hockey</td>
-                            <td className="athlete-td">Men's Hockey</td>
-                        </tr>
-                        <tr className="athlete-tr">
-                            <td className="athlete-td">Lovlina Borgohain</td>
-                            <td className="athlete-td">Boxing</td>
-                            <td className="athlete-td">Women’s 68kg</td>
-                        </tr>
-                    </table>
-                <img src={India} alt="" />
-
+                <div className="absolute-left">
+                    <img src={OlymLogo} alt="" />
+                </div>
+                <table className="athlete-table">
+                    <tr className="athlete-tr">
+                        <th className="athlete-th">Athlete</th>
+                        <th className="athlete-th">Sport</th>
+                        <th className="athlete-th">Event</th>
+                    </tr>
+                    <tr className="athlete-tr">
+                        <td className="athlete-td">Neeraj Choppra</td>
+                        <td className="athlete-td">Athletics</td>
+                        <td className="athlete-td">Men's Javelin Throw</td>
+                    </tr>
+                    <tr className="athlete-tr">
+                        <td className="athlete-td">PV Sindhu</td>
+                        <td className="athlete-td">Badminton</td>
+                        <td className="athlete-td">Women's Single</td>
+                    </tr>
+                    <tr className="athlete-tr">
+                        <td className="athlete-td">Nisha Dahiya</td>
+                        <td className="athlete-td">Wrestling</td>
+                        <td className="athlete-td">Women's 68Kg</td>
+                    </tr>
+                    <tr className="athlete-tr">
+                        <td className="athlete-td">Team India</td>
+                        <td className="athlete-td">Hockey</td>
+                        <td className="athlete-td">Men's Hockey</td>
+                    </tr>
+                    <tr className="athlete-tr">
+                        <td className="athlete-td">Lovlina Borgohain</td>
+                        <td className="athlete-td">Boxing</td>
+                        <td className="athlete-td">Women’s 68kg</td>
+                    </tr>
+                    <tr className="athlete-tr">
+                        <td className="athlete-td">Neeraj Choppra</td>
+                        <td className="athlete-td">Athletics</td>
+                        <td className="athlete-td">Men's Javelin Throw</td>
+                    </tr>
+                    <tr className="athlete-tr">
+                        <td className="athlete-td">PV Sindhu</td>
+                        <td className="athlete-td">Badminton</td>
+                        <td className="athlete-td">Women's Single</td>
+                    </tr>
+                    <tr className="athlete-tr">
+                        <td className="athlete-td">Nisha Dahiya</td>
+                        <td className="athlete-td">Wrestling</td>
+                        <td className="athlete-td">Women's 68Kg</td>
+                    </tr>
+                    <tr className="athlete-tr">
+                        <td className="athlete-td">Team India</td>
+                        <td className="athlete-td">Hockey</td>
+                        <td className="athlete-td">Men's Hockey</td>
+                    </tr>
+                    <tr className="athlete-tr">
+                        <td className="athlete-td">Lovlina Borgohain</td>
+                        <td className="athlete-td">Boxing</td>
+                        <td className="athlete-td">Women’s 68kg</td>
+                    </tr>
+                    <tr className="athlete-tr">
+                        <td className="athlete-td">Neeraj Choppra</td>
+                        <td className="athlete-td">Athletics</td>
+                        <td className="athlete-td">Men's Javelin Throw</td>
+                    </tr>
+                    <tr className="athlete-tr">
+                        <td className="athlete-td">PV Sindhu</td>
+                        <td className="athlete-td">Badminton</td>
+                        <td className="athlete-td">Women's Single</td>
+                    </tr>
+                    <tr className="athlete-tr">
+                        <td className="athlete-td">Nisha Dahiya</td>
+                        <td className="athlete-td">Wrestling</td>
+                        <td className="athlete-td">Women's 68Kg</td>
+                    </tr>
+                    <tr className="athlete-tr">
+                        <td className="athlete-td">Team India</td>
+                        <td className="athlete-td">Hockey</td>
+                        <td className="athlete-td">Men's Hockey</td>
+                    </tr>
+                    <tr className="athlete-tr">
+                        <td className="athlete-td">Lovlina Borgohain</td>
+                        <td className="athlete-td">Boxing</td>
+                        <td className="athlete-td">Women’s 68kg</td>
+                    </tr>
+                    <tr className="athlete-tr">
+                        <td className="athlete-td">Neeraj Choppra</td>
+                        <td className="athlete-td">Athletics</td>
+                        <td className="athlete-td">Men's Javelin Throw</td>
+                    </tr>
+                    <tr className="athlete-tr">
+                        <td className="athlete-td">PV Sindhu</td>
+                        <td className="athlete-td">Badminton</td>
+                        <td className="athlete-td">Women's Single</td>
+                    </tr>
+                    <tr className="athlete-tr">
+                        <td className="athlete-td">Nisha Dahiya</td>
+                        <td className="athlete-td">Wrestling</td>
+                        <td className="athlete-td">Women's 68Kg</td>
+                    </tr>
+                    <tr className="athlete-tr">
+                        <td className="athlete-td">Team India</td>
+                        <td className="athlete-td">Hockey</td>
+                        <td className="athlete-td">Men's Hockey</td>
+                    </tr>
+                    <tr className="athlete-tr">
+                        <td className="athlete-td">Lovlina Borgohain</td>
+                        <td className="athlete-td">Boxing</td>
+                        <td className="athlete-td">Women’s 68kg</td>
+                    </tr>
+                    <tr className="athlete-tr">
+                        <td className="athlete-td">Neeraj Choppra</td>
+                        <td className="athlete-td">Athletics</td>
+                        <td className="athlete-td">Men's Javelin Throw</td>
+                    </tr>
+                    <tr className="athlete-tr">
+                        <td className="athlete-td">PV Sindhu</td>
+                        <td className="athlete-td">Badminton</td>
+                        <td className="athlete-td">Women's Single</td>
+                    </tr>
+                    <tr className="athlete-tr">
+                        <td className="athlete-td">Nisha Dahiya</td>
+                        <td className="athlete-td">Wrestling</td>
+                        <td className="athlete-td">Women's 68Kg</td>
+                    </tr>
+                    <tr className="athlete-tr">
+                        <td className="athlete-td">Team India</td>
+                        <td className="athlete-td">Hockey</td>
+                        <td className="athlete-td">Men's Hockey</td>
+                    </tr>
+                    <tr className="athlete-tr">
+                        <td className="athlete-td">Lovlina Borgohain</td>
+                        <td className="athlete-td">Boxing</td>
+                        <td className="athlete-td">Women’s 68kg</td>
+                    </tr>
+                </table>
+                <div className="absolute-right">
+                    <img src={India} alt="" />
+                </div>
             </div>
         </div>
     );
