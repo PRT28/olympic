@@ -1,156 +1,80 @@
-import React from "react";
+import React, {useEffect, useState} from "react";
 import './Schedule.css';
 
 const Schedule = () => {
+
+    const [data, setData] = useState({});
+    
+
+    const dates = [
+        24, 25, 26, 27, 28, 29, 30, 31, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11
+    ];
+
+    useEffect(() => {
+        fetch('/data.json')
+          .then(response => response.json())
+          .then(data => setData(data))
+          .catch(error => console.error('Error fetching the JSON file:', error));
+      }, []);
+
+      
+    const sports = Object.keys(data);
+        
+
+    const dataHandler = (key, sport) => {
+
+        if (data[sport]['medal'].includes(key)) return 'M';
+        if (data[sport]['regular'].includes(key)) return 'R';
+        return '';
+
+    }
+
     return (
         <div className="schedule">
             <div className="sports">
                 <div className="sport-item big big-font">Sports</div>
-                <div className="sport-item">A</div>
-                <div className="sport-item">A</div>
-                <div className="sport-item">A</div>
-                <div className="sport-item">A</div>
-                <div className="sport-item">A</div>
-                <div className="sport-item">A</div>
+                {
+                   sports.map(d => <div className="sport-item">{d}</div>)
+                }
             </div>
             <div className="calender">
                 <div className="calender-item big" style={{padding: '5px', height: '60px'}}>
                     <div style={{display: 'flex', alignItems: 'center'}}>
-                        <div style={{width: '51%'}}>July</div>
+                        <div style={{width: '43%'}}>July</div>
                         <div>August</div>
                     </div>
 
-                    <div style={{display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginTop: '10px'}}>
-                        <div>24</div>
-                        <div>25</div>
-                        <div>26</div>
-                        <div>27</div>
-                        <div>28</div>
-                        <div>29</div>
-                        <div>30</div>
-                        <div>31</div>
-                        <div>1</div>
-                        <div>2</div>
-                        <div>3</div>
-                        <div>4</div>
-                        <div>5</div>
-                        <div>6</div>
-                        <div>7</div>
-                        <div>8</div>
-                        <div>9</div>
-                        <div>10</div>
+                    <div className="calender-grid" style={{marginTop: '10px'}}>
+                        {
+                            dates.map(d => <div className="grid-header">{d}</div>)
+                        }
                     </div>
                 </div>
                 <div className="calender-grid">
-                    <div className="grid-item"></div>
-                    <div className="grid-item"></div>
-                    <div className="grid-item"></div>
-                    <div className="grid-item"></div>
-                    <div className="grid-item"></div>
-                    <div className="grid-item"></div>
-                    <div className="grid-item"></div>
-                    <div className="grid-item"></div>
-                    <div className="grid-item"></div>
-                    <div className="grid-item"></div>
-                    <div className="grid-item"></div>
-                    <div className="grid-item"></div>
-                    <div className="grid-item"></div>
-                    <div className="grid-item"></div>
-                    <div className="grid-item"></div>
-                    <div className="grid-item"></div>
-                    <div className="grid-item"></div>
-                    <div className="grid-item"></div>
-                    <div className="grid-item"></div>
-                    <div className="grid-item"></div>
-                    <div className="grid-item"></div>
-                    <div className="grid-item"></div>
-                    <div className="grid-item"></div>
-                    <div className="grid-item"></div>
-                    <div className="grid-item"></div>
-                    <div className="grid-item"></div>
-                    <div className="grid-item"></div>
-                    <div className="grid-item"></div>
-                    <div className="grid-item"></div>
-                    <div className="grid-item"></div>
-                    <div className="grid-item"></div>
-                    <div className="grid-item"></div>
-                    <div className="grid-item"></div>
-                    <div className="grid-item"></div>
-                    <div className="grid-item"></div>
-                    <div className="grid-item"></div>
-                    <div className="grid-item"></div>
-                    <div className="grid-item"></div>
-                    <div className="grid-item"></div>
-                    <div className="grid-item"></div>
-                    <div className="grid-item"></div>
-                    <div className="grid-item"></div>
-                    <div className="grid-item"></div>
-                    <div className="grid-item"></div>
-                    <div className="grid-item"></div>
-                    <div className="grid-item"></div>
-                    <div className="grid-item"></div>
-                    <div className="grid-item"></div>
-                    <div className="grid-item"></div>
-                    <div className="grid-item"></div>
-                    <div className="grid-item"></div>
-                    <div className="grid-item"></div>
-                    <div className="grid-item"></div>
-                    <div className="grid-item"></div>
-                    <div className="grid-item"></div>
-                    <div className="grid-item"></div>
-                    <div className="grid-item"></div>
-                    <div className="grid-item"></div>
-                    <div className="grid-item"></div>
-                    <div className="grid-item"></div>
-                    <div className="grid-item"></div>
-                    <div className="grid-item"></div>
-                    <div className="grid-item"></div>
-                    <div className="grid-item"></div>
-                    <div className="grid-item"></div>
-                    <div className="grid-item"></div>
-                    <div className="grid-item"></div>
-                    <div className="grid-item"></div>
-                    <div className="grid-item"></div>
-                    <div className="grid-item"></div>
-                    <div className="grid-item"></div>
-                    <div className="grid-item"></div>
-                    <div className="grid-item"></div>
-                    <div className="grid-item"></div>
-                    <div className="grid-item"></div>
-                    <div className="grid-item"></div>
-                    <div className="grid-item"></div>
-                    <div className="grid-item"></div>
-                    <div className="grid-item"></div>
-                    <div className="grid-item"></div>
-                    <div className="grid-item"></div>
-                    <div className="grid-item"></div>
-                    <div className="grid-item"></div>
-                    <div className="grid-item"></div>
-                    <div className="grid-item"></div>
-                    <div className="grid-item"></div>
-                    <div className="grid-item"></div>
-                    <div className="grid-item"></div>
-                    <div className="grid-item"></div>
-                    <div className="grid-item"></div>
-                    <div className="grid-item"></div>
-                    <div className="grid-item"></div>
-                    <div className="grid-item"></div>
-                    <div className="grid-item"></div>
-                    <div className="grid-item"></div>
-                    <div className="grid-item"></div>
-                    <div className="grid-item"></div>
-                    <div className="grid-item"></div>
-                    <div className="grid-item"></div>
-                    <div className="grid-item"></div>
-                    <div className="grid-item"></div>
-                    <div className="grid-item"></div>
-                    <div className="grid-item"></div>
-                    <div className="grid-item"></div>
-                    <div className="grid-item"></div>
-                    <div className="grid-item"></div>
-                    <div className="grid-item"></div>
-                    <div className="grid-item"></div>
-
+                    {
+                        sports.map((d, i) => <>
+                        
+                            <div className="grid-item">{dataHandler(`24Jul`, d)}</div>
+                            <div className="grid-item">{dataHandler(`25Jul`, d)}</div>
+                            <div className="grid-item">{dataHandler(`26Jul`, d)}</div>
+                            <div className="grid-item">{dataHandler(`27Jul`, d)}</div>
+                            <div className="grid-item">{dataHandler(`28Jul`, d)}</div>
+                            <div className="grid-item">{dataHandler(`29Jul`, d)}</div>
+                            <div className="grid-item">{dataHandler(`30Jul`, d)}</div>
+                            <div className="grid-item">{dataHandler(`31Jul`, d)}</div>
+                            <div className="grid-item">{dataHandler(`1Aug`, d)}</div>
+                            <div className="grid-item">{dataHandler(`2Aug`, d)}</div>
+                            <div className="grid-item">{dataHandler(`3Aug`, d)}</div>
+                            <div className="grid-item">{dataHandler(`4Aug`, d)}</div>
+                            <div className="grid-item">{dataHandler(`5Aug`, d)}</div>
+                            <div className="grid-item">{dataHandler(`6Aug`, d)}</div>
+                            <div className="grid-item">{dataHandler(`7Aug`, d)}</div>
+                            <div className="grid-item">{dataHandler(`8Aug`, d)}</div>
+                            <div className="grid-item">{dataHandler(`9Aug`, d)}</div>
+                            <div className="grid-item">{dataHandler(`10Aug`, d)}</div>
+                            <div className="grid-item">{dataHandler(`11Aug`, d)}</div>
+                        </>)
+                    }
                 </div>
             </div>
         </div>

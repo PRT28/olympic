@@ -8,45 +8,9 @@ const Timer = () => {
     const [mins, setMins] = useState(null);
     const [sec, setSec] = useState(null);
 
-    useEffect(() => {
-
-        var dateFuture = new Date("2024-07-26");
-        var dateNow = new Date();
-
-        var seconds = Math.floor((dateFuture - (dateNow))/1000);
-        var minutes = Math.floor(seconds/60);
-        var hours = Math.floor(minutes/60);
-        var days = Math.floor(hours/24);
-        
-        hours = hours-(days*24);
-        minutes = minutes-(days*24*60)-(hours*60);
-        seconds = seconds-(days*24*60*60)-(hours*60*60)-(minutes*60);
-
-        setDays(days);
-        setHours(hours);
-        setMins(minutes);
-        setSec(seconds);
-    }, [])
 
     useEffect(() => {
         if (sec !== null && mins !== null && h !== null && d !== null) {
-
-            var dateFuture = new Date("2024-07-26");
-            var dateNow = new Date();
-
-            var seconds = Math.floor((dateFuture - (dateNow))/1000);
-            var minutes = Math.floor(seconds/60);
-            var hours = Math.floor(minutes/60);
-            var days = Math.floor(hours/24);
-            
-            hours = hours-(days*24);
-            minutes = minutes-(days*24*60)-(hours*60);
-            seconds = seconds-(days*24*60*60)-(hours*60*60)-(minutes*60);
-
-            setDays(days);
-            setHours(hours);
-            setMins(minutes);
-            setSec(seconds);
 
             const daytimeout = setInterval(() => {
                 setDays(d - 1);
@@ -78,6 +42,23 @@ const Timer = () => {
                 clearInterval(mintimeout);
                 clearInterval(sectimeout);
             }
+        } else {
+            var dateFuture = new Date("2024-07-26");
+            var dateNow = new Date();
+    
+            var seconds = Math.floor((dateFuture - (dateNow))/1000);
+            var minutes = Math.floor(seconds/60);
+            var hours = Math.floor(minutes/60);
+            var days = Math.floor(hours/24);
+            
+            hours = hours-(days*24);
+            minutes = minutes-(days*24*60)-(hours*60);
+            seconds = seconds-(days*24*60*60)-(hours*60*60)-(minutes*60);
+    
+            setDays(days);
+            setHours(hours);
+            setMins(minutes);
+            setSec(seconds);
         }
 
     }, [sec, mins, h, d])

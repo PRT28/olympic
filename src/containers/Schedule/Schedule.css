@@ -51,19 +51,26 @@
 
 .calender-grid {
     display: grid;
-    grid-template-columns: auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto;
+    grid-template-columns: auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto;
     background-color: transparent;
     grid-column-gap: 5px;
     grid-row-gap: 5px;
     padding-left: 5px;
     width: 956px;
   }
+
+  .grid-header {
+    width: 45px;
+    border: none;
+    text-align: left;
+  }
+
   .grid-item {
     background-color:#F9F9F9;
     height: 45px;
     width: 45px;
     border: none;
-    font-size: 45px;
+    font-size: 24px;
     text-align: center;
   }
 
