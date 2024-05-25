@@ -38,7 +38,7 @@ const Schedule = () => {
                 }
             </div>
             <div className="calender">
-                <div className="calender-item big" style={{padding: '5px', height: '60px'}}>
+                <div className="calender-item big" style={{paddingLeft: '5px', height: '60px', paddingTop: '5px'}}>
                     <div style={{display: 'flex', alignItems: 'center'}}>
                         <div style={{width: '43%'}}>July</div>
                         <div>August</div>
